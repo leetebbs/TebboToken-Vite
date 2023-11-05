@@ -25,7 +25,7 @@ function Contact() {
 
   return (
     <section>
-      <div className="container">
+      <div className="contact_container">
         <h1>Contact Us</h1>
         <form onSubmit={handleSubmit}>
           <div className="form-group">
