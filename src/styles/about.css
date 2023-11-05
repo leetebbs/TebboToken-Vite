@@ -1,0 +1,26 @@
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 500px;
+  font-size: 14px;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+  margin-top: 50px;
+}
+
+.binance {
+  width: 500px;
+  margin-top: 90px;
+}
+
+.contract_Address {
+  font-weight: 600;
+  font-size: 18px;
+}
