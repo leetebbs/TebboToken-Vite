@@ -5,7 +5,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import axios from "axios";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 function App() {
   const [price, setPrice] = useState(0);
   const serverUrl = import.meta.env.VITE_SERVER_URL;
@@ -13,12 +13,11 @@ function App() {
   async function fetchdata() {
     const response = await axios.get(serverUrl);
     const decPrice = response.data.usdPrice;
-    console.log(decPrice.toFixed(8));
     setPrice(decPrice.toFixed(8));
-    console.log(price);
+    console.log("Price fetched from server: " + decPrice);
   }
 
-  // fetchdata();
+  fetchdata();
   return (
     <>
       <Navbar price={price} />
