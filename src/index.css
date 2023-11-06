@@ -98,9 +98,12 @@ select {
 }
 
 @media only screen and (max-width: 530px) {
-  body {
+  /* body {
     height: 500px;
     width: 400px;
     margin: 0 auto;
+  } */
+  body {
+    padding: 0 20px;
   }
 }

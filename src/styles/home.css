@@ -63,26 +63,40 @@
 
 /* 1330 */
 @media only screen and (max-width: 1330px) {
+  body {
+    /* background-color: red; */
+    height: auto;
+    margin: 0;
+  }
   .container {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 100px;
-    width: 400px;
-    height: auto;
-    padding: 0 20px;
-    margin: 0 auto;
+    /* gap: 100px; */
+    /* width: 300px; */
+    /* height: auto; */
+    /* padding: 0 20px; */
+    /* margin: 0 auto; */
   }
 
+  .title {
+    width: 300px;
+    margin-top: -40px;
+  }
+
+  .text {
+    font-size: 20px;
+    margin: 40px 20px;
+  }
   .info {
     /* border: 1px solid red; */
     /* background-color: rgba(255, 255, 255, 0.082); */
-    border-radius: 10px;
+    /* border-radius: 10px; */
     /* padding: 40px; */
     width: 400px;
     height: 600px;
-    padding: 0 20px;
+    /* padding: 0 20px; */
     font-size: 16px;
     margin-top: 20px;
     display: flex;
@@ -95,10 +109,11 @@
   .text-sml {
     width: 350px;
     font-size: 14px;
+    padding: 0 20px;
   }
 
   .text_container {
-    width: 350px;
+    /* width: 400px; */
   }
 
   .icon {
