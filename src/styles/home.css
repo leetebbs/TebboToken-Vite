@@ -78,6 +78,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    width: 100%;
     /* gap: 100px; */
     /* width: 300px; */
     /* height: auto; */
