@@ -1,7 +1,11 @@
-import React, { useState } from "react";
+// import React, { useState } from "react";
+import React, { useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
 import "../styles/contact.css";
 
 function Contact() {
+  const form = useRef();
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -16,24 +20,37 @@ function Contact() {
     });
   };
 
-  const handleSubmit = (e) => {
+  const sendEmail = (e) => {
     e.preventDefault();
-    // Handle form submission logic here, such as sending the data to a server
-    console.log("Form submitted:", formData);
-    // You can add API calls or other logic to handle the form data
+
+    emailjs
+      .sendForm(
+        "service_4nxmolf",
+        "template_ik1wrs9",
+        form.current,
+        "-t6F1GeYkHc9EtVgd"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
   };
 
   return (
     <section>
       <div className="contact_container">
         <h1>Contact Us</h1>
-        <form onSubmit={handleSubmit}>
+        <form ref={form} onSubmit={sendEmail}>
           <div className="form-group">
             <label htmlFor="name">Name:</label>
             <input
               type="text"
               id="name"
-              name="name"
+              name="user_name"
               value={formData.name}
               onChange={handleInputChange}
               required
@@ -44,7 +61,7 @@ function Contact() {
             <input
               type="email"
               id="email"
-              name="email"
+              name="user_email"
               value={formData.email}
               onChange={handleInputChange}
               required
