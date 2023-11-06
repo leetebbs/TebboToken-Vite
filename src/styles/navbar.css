@@ -62,6 +62,7 @@ ul {
   }
 
   .fa-bars {
+    display: block;
     margin-right: 20px;
     font-size: 20px;
   }
