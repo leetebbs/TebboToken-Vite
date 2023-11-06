@@ -78,6 +78,7 @@ ul {
   }
 
   .dropdown {
+    display: none;
     position: absolute;
     background-color: #585eb7;
     display: block;
