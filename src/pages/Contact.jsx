@@ -44,14 +44,19 @@ function Contact() {
     <section>
       <div className="contact_container">
         <h1>Contact Us</h1>
+        <p className="contact_text">
+          If you are interested in a token of your own or want to get in touch
+          with us, please fill out the form below.
+        </p>
         <form ref={form} onSubmit={sendEmail}>
           <div className="form-group">
             <label htmlFor="name">Name:</label>
             <input
+              placeholder="Name"
               type="text"
               id="name"
               name="user_name"
-              value={formData.name}
+              // value={formData.name}
               onChange={handleInputChange}
               required
             />
@@ -59,10 +64,11 @@ function Contact() {
           <div className="form-group">
             <label htmlFor="email">Email:</label>
             <input
+              placeholder="Email address"
               type="email"
               id="email"
               name="user_email"
-              value={formData.email}
+              // value={formData.email}
               onChange={handleInputChange}
               required
             />
@@ -70,14 +76,17 @@ function Contact() {
           <div className="form-group">
             <label htmlFor="message">Message:</label>
             <textarea
+              placeholder="Send us a message"
               id="message"
               name="message"
-              value={formData.message}
+              // value={formData.message}
               onChange={handleInputChange}
               required
             ></textarea>
           </div>
-          <button type="submit">Submit</button>
+          <button className="submitBtn" type="submit">
+            Submit
+          </button>
         </form>
       </div>
     </section>
