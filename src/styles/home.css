@@ -62,7 +62,7 @@
 }
 
 /* 1330 */
-@media only screen and (max-width: 530px) {
+@media only screen and (max-width: 1330px) {
   .container {
     display: flex;
     align-items: center;
@@ -72,6 +72,7 @@
     width: 400px;
     height: auto;
     padding: 0 20px;
+    margin: 0 auto;
   }
 
   .info {
