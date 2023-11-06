@@ -9,7 +9,7 @@
     rgba(183, 104, 212, 1) 100%
   );
   height: 100vh;
-}
+  margin-top: -50px;
 }
 
 .tebbo {
