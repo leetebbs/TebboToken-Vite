@@ -44,10 +44,10 @@ function Contact() {
     <section>
       <div className="contact_container">
         <h1>Contact Us</h1>
-        <p className="contact_text">
+        {/* <p className="contact_text">
           If you are interested in a token of your own or want to get in touch
           with us, please fill out the form below.
-        </p>
+        </p> */}
         <form ref={form} onSubmit={sendEmail}>
           <div className="form-group">
             <label htmlFor="name">Name:</label>
