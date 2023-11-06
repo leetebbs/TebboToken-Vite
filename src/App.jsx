@@ -20,7 +20,7 @@ function App() {
   fetchdata();
   return (
     <>
-      {/* <Navbar price={price} /> */}
+      <Navbar price={price} />
       {/* <Home /> */}
 
       <Routes>
