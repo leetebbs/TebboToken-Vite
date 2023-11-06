@@ -86,4 +86,8 @@ textarea {
     gap: 20px;
     width: 90%;
   }
+
+  h1 {
+    margin-top: 20px;
+  }
 }
