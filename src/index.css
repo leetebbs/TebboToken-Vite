@@ -36,7 +36,7 @@ html:focus-within {
 
 /* Set core body defaults */
 body {
-  min-height: 100vh;
+  /* min-height: 100vh; */
   text-rendering: optimizeSpeed;
   line-height: 1.5;
 }
@@ -84,11 +84,11 @@ select {
 
   color-scheme: light dark;
   color: rgb(236, 236, 236);
-  background: linear-gradient(
+  /* background: linear-gradient(
     142deg,
     rgba(60, 91, 175, 1) 0%,
     rgba(183, 104, 212, 1) 100%
-  );
+  ); */
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -105,6 +105,7 @@ select {
   } */
   body {
     width: 100%;
-    background-color: red;
+    height: 100vh;
+    /* background-color: red; */
   }
 }
