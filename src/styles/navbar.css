@@ -16,6 +16,10 @@ nav {
   display: none;
 }
 
+.dropdown {
+  display: none;
+}
+
 .menu {
   display: flex;
   align-items: center;
@@ -70,5 +74,25 @@ ul {
     display: block;
     margin-right: 20px;
     font-size: 20px;
+    cursor: pointer;
+  }
+
+  .dropdown {
+    position: absolute;
+    background-color: #585eb7;
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 15px 0;
+  }
+
+  .dropdown a {
+    /* margin-bottom: 10px; */
+    color: white;
+  }
+
+  .dropdown li {
+    margin-bottom: 15px;
   }
 }
