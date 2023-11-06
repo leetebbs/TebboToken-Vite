@@ -8,6 +8,10 @@ nav {
   width: 150px;
 }
 
+.price {
+  margin-right: 250px;
+}
+
 .fa-bars {
   display: none;
 }
@@ -31,7 +35,8 @@ a {
 ul {
   display: flex;
   gap: 5rem;
-  align-items: center;
+  padding-top: 13px;
+  /* align-items: center; */
 }
 
 .link {

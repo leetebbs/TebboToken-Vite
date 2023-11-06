@@ -17,7 +17,7 @@ function App() {
     console.log("Price fetched from server: " + decPrice);
   }
 
-  fetchdata();
+  // fetchdata();
   return (
     <>
       <Navbar price={price} />
