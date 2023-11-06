@@ -97,7 +97,9 @@ select {
   -webkit-text-size-adjust: 100%;
 }
 
-body {
-  height: auto;
-  width: auto;
+@media only screen and (max-width: 530px) {
+  body {
+    height: 600px;
+    width: 500px;
+  }
 }
