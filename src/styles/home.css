@@ -3,6 +3,11 @@
   align-items: center;
   justify-content: center;
   gap: 100px;
+  background: linear-gradient(
+    142deg,
+    rgba(60, 91, 175, 1) 0%,
+    rgba(183, 104, 212, 1) 100%
+  );
 }
 
 .tebbo {
