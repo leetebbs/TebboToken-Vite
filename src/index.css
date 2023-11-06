@@ -105,5 +105,6 @@ select {
   } */
   body {
     width: 100%;
+    background-color: red;
   }
 }
