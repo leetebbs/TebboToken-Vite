@@ -62,7 +62,7 @@
 }
 
 /* 1330 */
-@media only screen and (max-width: 1330px) {
+@media only screen and (max-width: 530px) {
   .container {
     display: flex;
     align-items: center;
@@ -72,7 +72,6 @@
     width: 400px;
     height: auto;
     padding: 0 20px;
-    background-color: black;
   }
 
   .info {
